@@ -44,7 +44,7 @@ Fraction Smallest_fraction(Fraction f1,Fraction f2,Fraction f3)
 }
 void output(Fraction f1,Fraction f2,Fraction f3,Fraction smallest)
 {
-  printf("the greatest among %d/%d,%d/%d and %d/%d is %d/%d",f1.num,f1.den,f2.num,f2.den,f3.num,f3.den,smallest.num,smallest.den);
+  printf("the smallest among %d/%d,%d/%d and %d/%d is %d/%d",f1.num,f1.den,f2.num,f2.den,f3.num,f3.den,smallest.num,smallest.den);
 }  
 int main()
 {
