@@ -51,7 +51,6 @@ Fraction add_n_fractions(int n, Fraction f[n])
 {
   Fraction sum;
   sum=f[0];
-
   for(int i=1;i<n;i++)
     {
       sum=add_fraction(sum,f[i]);
@@ -65,3 +64,16 @@ void output_n_fractions(int n,Fraction f[n], Fraction sum)
   {
    printf("%d/%d+", f[i].num,f[i].den);
   }
+  printf("%d/%d", f[i].num,f[i].den);
+  printf(" is %d/%d", sum.num, sum.den);
+}
+int main()
+{
+  int n;
+  n=input_n();
+  Fraction f[n],sum;
+  input_n_fractions(n,f);
+  sum=add_n_fractions(n,f);
+  output_n_fractions(n,f,sum);
+  return 0;
+}
