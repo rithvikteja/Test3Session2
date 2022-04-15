@@ -3,7 +3,7 @@
 void input_string(char *a)
 {
   printf("enter the string\n");
-  fgets(a,200,stdin);
+  fgets(a,50,stdin);
 }
 int count_words(char *string)
 {
@@ -12,7 +12,7 @@ int count_words(char *string)
     {
      if(string[i]==' ')
      {
-       count=count+1;
+       count++;
      }
     }
   return count;   

@@ -16,7 +16,7 @@ float input_x()
 void input_coefficients(int n,float a[n])
 {
  
-  for(int i=n;i>=0;i--)
+  for(int i=0;i<=n;i++)//n=4,i=0,1,2,3
     {
       printf("Enter the coefficient of [x^%d]:",i);
       scanf("%f",&a[i]);
@@ -27,7 +27,7 @@ float evaluate_polynomial(int n,float a[n],float x)
   int sum=0;
   for(int i=n;i>0;i--)
     {
-      sum=(sum+a[i])*x;
+      sum=(sum+a[i])*x;//x=1
       
     }
   sum=sum+a[0];
